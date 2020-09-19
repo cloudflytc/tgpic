@@ -1,9 +1,6 @@
 <?php
 /**
  * FILE_NAME: upload.php
- * From: www.hidove.cn
- * Author: Ivey
- * Date: 2019/10/10 14:28
  */
 
 if(empty($_FILES['image'])){
