@@ -21,7 +21,7 @@ $body["file"] = new \CURLFile(realpath($newFileName));
 $response = HidoveCurlPost('https://telegra.ph/upload',$body);
 $response = json_decode($response,true);
 //echo($response[0]['src']);
-$imagesUrl['url'][0] = "https://i".rand(0,4).".wp.com/telegra.ph".$response[0]['src'];
+$imagesUrl['url'][0] = "https://i".rand(0,3).".wp.com/telegra.ph".$response[0]['src'];
 $imagesUrl['url'][1] = "https://telegra.ph".$response[0]['src'];
 $imagesUrl['url'][2] = "https://images.weserv.nl/?url=".$imagesUrl['url'][1];
 //print_r($$imagesUrl['url'][0]imagesUrl);
